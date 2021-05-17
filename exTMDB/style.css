@@ -1,0 +1,122 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+/* typography classes */
+.font-baloo {
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+.font-rale {
+  font-family: "Raleway", cursive;
+}
+
+.font-rubik {
+  font-family: "Rubik", cursive;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+header{
+  width: 100%;
+  height: 50px;
+  background: rgb(38, 39, 38);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #ccc;
+  padding-left: 30px;
+}
+header h1{
+  margin: 0 20px;
+  color: #fff;
+}
+header a {
+  text-decoration: none;
+}
+header form{
+  display: flex;
+  align-items: center;
+}
+/* The search bar */
+#search{
+  width: 230px;
+  height: 30px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 20px;
+  padding-left: 15px;
+  
+}
+
+main{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(231, 230, 230)
+
+}
+main div{
+  width: 300px;
+  margin: 19px 15px;
+  background: #ff8100;
+  border-radius: 5px;
+
+}
+img{
+  width: 100%;
+  height: 89%;
+  object-fit: cover;
+}
+h2{
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  margin: 10px;
+}
+
+.nav-link{
+  color: #fff;
+}
+.navbar-expand-sm {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+
+a:hover {
+ color: #ff8100;
+}
+.color-primary-bg{
+  color: #ff8100;
+}
+
+
+

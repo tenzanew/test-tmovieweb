@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+     <!-- Bootstap CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+     <!-- Owl-carousel CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+     
+     <!-- font awesome icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+ 
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+  <!-- The header that contains the title and the Search bar -->
+    <header>
+        <a href="." class="font-size-16 font-rale"><h1>MoviesTMDB</h1></a>
+        <form id="form">
+            <input
+                type="text"
+                id="search"
+                placeholder="Search"
+                class="search"
+            />
+        </form>
+        
+         <!-- Primary Navigation -->
+         <nav class="navbar navbar-expand-sm color-second-bg nav-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse"id="navbarNav">
+          <ul class="navbar-nav m-auto font-Raleway font-size-14">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Review<i class="fas fa-chevron-down"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Category<i class="fas fa-chevron-down"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Comming Soon</a>
+            </li>                  
+          </ul>
+          <form action="#" class="font-size-14 font-rale">
+              <a href="#" class="py-2 rounded-pill color-primary-bg">
+                  <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                  <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+              </a>
+          </form>
+          </div>
+      </nav>
+      <!-- !Primary Navigation -->
+
+    </header>
+  <!-- The main  put all our movies from the API -->
+    <main id="main" class="font-rubik font-size-20"></main>
+    <!-- Blogs -->
+    <section id="blogs">
+      <div class="container py-4">
+        <h4 class="font-rubik font-size-20">Lastest Blogs</h4>
+        <hr>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="card border-0 font-rale mr-5" style="width: 18rem;">
+                    <h5 class="card-title font-size-16">Upcoming Movie</h5>
+                    <img src="./assets /blog/blog1.jpg" alt="cart image" class="card-img-top">
+                    <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro modi nostrum voluptates adipisci dolorem quasi sed dolore suscipit dolores nemo?</p>
+                    <a href="#" class="color-second text-left">Go somewhere</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card border-0 font-rale mr-5" style="width: 18rem;">
+                    <h5 class="card-title font-size-16">Upcoming Movie</h5>
+                    <img src="./assets /blog/blog2.jpg" alt="cart image" class="card-img-top">
+                    <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro modi nostrum voluptates adipisci dolorem quasi sed dolore suscipit dolores nemo?</p>
+                    <a href="#" class="color-second text-left">Go somewhere</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card border-0 font-rale mr-5" style="width: 18rem;">
+                    <h5 class="card-title font-size-16">Upcoming Movie</h5>
+                    <img src="./assets /blog/blog3.jpg" alt="cart image" class="card-img-top">
+                    <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro modi nostrum voluptates adipisci dolorem quasi sed dolore suscipit dolores nemo?</p>
+                    <a href="#" class="color-second text-left">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+      </div>  
+    </section>
+    <!-- Blogs -->
+
+    <!-- start #footer -->
+    <footer id="footer" class="bg-dark text-white py-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-3 col-12">
+                  <h4 class="font-rubik font-size-20">MovieTMDB</h4>
+                  <p class="font-size-14 font-rale text-white-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id neque placeat nostrum illo ipsa enim, similique laborum cupiditate sed corrupti eveniet voluptatibus eligendi soluta excepturi rerum beatae, ipsum nihil. Inventore!</p>
+              </div>
+              <div class="col-lg-4 col-12">
+                  <h4 class="font-rubik font-size-20">Newsletter</h4>
+                  <form class="form-row">
+                      <div class="col">
+                          <input type="text" class="form-control" placeholder="Email*">
+                      </div>
+                      <div class="col">
+                          <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                      </div>
+                  </form>
+              </div>
+              <div class="col-lg-2 col-12">
+              <h4 class="font-rubik font-size-20">Information</h4>
+              <div class="d-flex flex-column flex-wrap">
+                  <a href="#" class="font-rale font-size-14 text-white-50 pb-1">About-Us</a>
+                  <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Old Movie</a>
+                  <a href="#" class="font-rale font-size-14 text-white-50 pb-1">New Movie</a>
+                  <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Anime</a>
+              </div>
+              </div>
+              <div class="col-lg-2 col-12">
+                  <h4 class="font-rubik font-size-20">Account</h4>
+                  <div class="d-flex flex-column flex-wrap">
+                      <a href="#" class="font-rale font-size-14 text-white-50 pb-1">My Account</a>
+                      <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Order History</a>
+                      <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Movie List</a>
+                      <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Newsletters</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <div class="copyright text-center bg-dark text-white py-2">
+      <p class="font-rale font-size-14">&copy; Copyrights 2021. Desing By <a href="#" class="color-second">Achira Sriwiang</a></p>
+  </div>
+<!-- !start #footer -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+    <!-- isotope pugin cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>    
+</body>
+</html>
